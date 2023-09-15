@@ -80,43 +80,82 @@ nav{
     width: 100%;
     height: calc(100% - 10%);
     background-color: yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.hero-lft{
-    width: 50%;
-    height: 100%;
+.hero-top{
+    width: 100%;
+    height: 70%;
     background-color: green;
-}
-.hero-ryt{
-    width: 50%;
-    height: 100%;
-    background-color: pink;
 }
 .big-text{
     width: 100%;
-    /* height: 10%; */
+    height: 100%;
     background-color: yellowgreen;
     position: relative;
     text-transform: capitalize;
     font-family: 'Mukta', sans-serif;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     flex-direction: column;
+    padding: 0 5vw;
 }
 .big-text>h1{
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 700;
+    padding: 1vw 4vw;
     width: fit-content;
     background-color: rebeccapurple;
+    line-height: 1;
 }
 .big-text>h2{
-    font-size: 6vw;
+    font-size: 7vw;
     font-weight: 700;
     width: fit-content;
+    background-color: red;
+}
+.hero-bottom{
+    width: 100%;
+    height: 30%;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+}
+.h-btm-lft{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-color: gray;
+}
+.small-txt{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-transform: capitalize;
+}
+.small-txt>p{
+    font-size: 2vw;
 
+}
+.h-btm-ryt{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-color: gray;
+}
+.h-btm-ryt>.icons{
+width: 100%;
+height: 100%;
+position: relative;
+display: flex;
+align-items: flex-end;
+justify-content: flex-start;
+flex-direction: column;
+padding: 4vw 5vw;
+}
+.icons>i{
+    width: fit-content;
+    font-size: 2vw;
+    background-color: rebeccapurple;
 }
 /* ************ page2 ************** */
 #page2{
