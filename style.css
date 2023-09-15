@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Gentium+Book+Plus:ital@1&family=Merriweather&family=Mukta:wght@200;400;800&family=Pacifico&family=Roboto+Condensed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+:root{
+    --bg-color:#fafaf9;
+    --page-bg-color:#86efac;
+    --text-color:#19725D;
+    --sec-text-color:#78716c;
+    --basic_color:#292524;
+    --cards-color:#E0E2E5;
+    --icont-font-color:#f5be0b;
+    --icon-bg-color:#fef1c7;
+}
+
+#main{
+    
+}
+/* ************ page1 ************* */
+#page1{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    /* background-color: rebeccapurple; */
+    position: relative;
+    display: flex;
+
+}
+#left-nav,#right-nav {
+    width: 20%;
+    height: 100%;
+    /* background-color: aqua; */
+    font-family: 'Mukta', sans-serif;
+}
+#center-nav{
+    width: 60%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2vw;
+}
+#center-nav>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#center-nav>ul>li>a{
+    text-decoration: none;
+}
+#right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#right-nav>li>a,#right-nav>li{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ********** hero part ************** */
+
+#hero{
+    width: 100%;
+    height: calc(100% - 10%);
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-lft{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+}
+.hero-ryt{
+    width: 50%;
+    height: 100%;
+    background-color: pink;
+}
+.big-text{
+    width: 100%;
+    /* height: 10%; */
+    background-color: yellowgreen;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.big-text>h1{
+    font-size: 5vw;
+    font-weight: 700;
+    width: fit-content;
+    background-color: rebeccapurple;
+}
+.big-text>h2{
+    font-size: 6vw;
+    font-weight: 700;
+    width: fit-content;
+
+}
+/* ************ page2 ************** */
+#page2{
+    width: 100vw;
+    height: 100vh;
+    background-color: rebeccapurple;
+    position: relative;
+}
