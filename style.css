@@ -28,7 +28,7 @@ html,body{
 #page1{
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    /* background-color: red; */
     position: relative;
 }
 nav{
@@ -37,6 +37,7 @@ nav{
     /* background-color: rebeccapurple; */
     position: relative;
     display: flex;
+    opacity: 0;
 
 }
 #left-nav,#right-nav {
@@ -53,6 +54,8 @@ nav{
     align-items: center;
     justify-content: flex-end;
     padding: 0 2vw;
+    position: relative;
+    /* background-color: rebeccapurple; */
 }
 #center-nav>ul{
     list-style: none;
@@ -60,9 +63,24 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 2vw;
+    /* background-color: #19725D; */
+    width: 50%;
+    /* height: 100%; */
+}
+#center-nav>ul>li{
+    /* background-color: red; */
+    width: 100%; 
 }
 #center-nav>ul>li>a{
     text-decoration: none;
+    max-width: 100%;
+    color: #656363;
+    font-size: 1.5vw;
+    /* font-weight: 400; */
+    font-family: 'Fuggles',cursive;
+}
+#center-nav>ul>li>i{
+    font-size: 1.6vw;
 }
 #right-nav{
     display: flex;
@@ -72,24 +90,30 @@ nav{
 #right-nav>li>a,#right-nav>li{
     list-style: none;
     text-decoration: none;
+    font-family: 'Fuggles',cursive;
+    color: #656363;
+    font-size: 1.5vw;
+    transition: color .5s ease;
 }
-
+#center-nav>ul>li>a:hover ,#right-nav>li>a:hover{
+    color: #000;
+}
 /* ********** hero part ************** */
 
 #hero{
     width: 100%;
     height: calc(100% - 10%);
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 .hero-top{
     width: 100%;
     height: 70%;
-    background-color: green;
+    /* background-color: green; */
 }
 .big-text{
     width: 100%;
     height: 100%;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     position: relative;
     text-transform: capitalize;
     font-family: 'Mukta', sans-serif;
@@ -104,19 +128,19 @@ nav{
     font-weight: 700;
     padding: 1vw 4vw;
     width: fit-content;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     line-height: 1;
 }
 .big-text>h2{
     font-size: 7vw;
     font-weight: 700;
     width: fit-content;
-    background-color: red;
+    /* background-color: red; */
 }
 .hero-bottom{
     width: 100%;
     height: 30%;
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     align-items: center;
 }
@@ -124,13 +148,14 @@ nav{
     width: 50%;
     height: 100%;
     position: relative;
-    background-color: gray;
+    /* background-color: gray; */
 }
 .small-txt{
     width: 100%;
     height: 100%;
     position: relative;
     text-transform: capitalize;
+    padding: 1vw 5vw;
 }
 .small-txt>p{
     font-size: 2vw;
@@ -140,7 +165,8 @@ nav{
     width: 50%;
     height: 100%;
     position: relative;
-    background-color: gray;
+    z-index: 2;
+    /* background-color: gray; */
 }
 .h-btm-ryt>.icons{
 width: 100%;
@@ -148,14 +174,58 @@ height: 100%;
 position: relative;
 display: flex;
 align-items: flex-end;
-justify-content: flex-start;
-flex-direction: column;
-padding: 4vw 5vw;
+justify-content: flex-end;
+gap: 1vw;
+padding: 1vw 5vw;
+}
+.icons>p{
+    font-weight: 700;
 }
 .icons>i{
     width: fit-content;
     font-size: 2vw;
-    background-color: rebeccapurple;
+    font-weight: 600;
+    /* background-color: rebeccapurple; */
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color:#000;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3vw;
+    /* opacity: 0; */
+}
+.text-overlay{
+    width: 100%;
+    height: 100%;
+    position: relative;   
+}
+.text-overlay>p{
+    color: #fff;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 2vw;
+    width: 30%;
+    font-size: 1.2vw;
+    padding: 1vw 5vw;
+    font-family: 'Fuggles', cursive;
+
+}
+.overlay>img{
+    padding-inline: 10vw;
+    /* width: 50%; */
+    height: 70%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    z-index: 9;
 }
 /* ************ page2 ************** */
 #page2{

@@ -18,8 +18,8 @@
                 </div>
                 <div id="center-nav">
                     <ul>
-                        <li><a href="#">Home</a><i class="fa-solid fa-house"></i></li>
-                        <li><a href="#">About</a><i class="fa-duotone fa-address-card"></i></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
                         <li><a href="#">Project</a></li>
                     </ul>
                 </div>
@@ -32,7 +32,8 @@
                 <div class="hero-top">
                     <div class="big-text">
                         <h1>hello </h1>
-                        <h2>i'm shivani verma</h2>
+                        <!-- <span ></span> -->
+                        <h2 id="element">i'm shivani verma</h2>
                     </div>
                 </div>
                 <div class="hero-bottom">
@@ -44,13 +45,23 @@
                     </div>
                     <div class="h-btm-ryt">
                         <div class="icons">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-instagram"></i>
+                            <p>LinkedIn</p><i class="fa-brands fa-linkedin"></i>
+                            <p>Instagram</p><i class="fa-brands fa-instagram"></i>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- overlay pic -->
+            <div class="overlay">
+                <div class="text-overlay">
+                    <p>I'm a web Developer
+                        living in Lucknow(U.P)
+                        Foucesed on creating
+                        long lasting Experinces
+                    </p>
+                </div>
+                <img src="./pngimg.com - angelina_jolie_PNG26.png" alt="">
+            </div>
         </div>
         <!-- page1 end -->
 
@@ -67,6 +78,15 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ["I'm Shivani Verma",'A Web Developer'],
+          typeSpeed: 130,
+          backSpace:50,
+          loop:true
+        });
+      </script>
     <script src="https://kit.fontawesome.com/1779103ae0.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>

@@ -29,3 +29,45 @@ function loco(){
   ScrollTrigger.refresh();
   }
   loco()
+
+// ******* gsap **************
+gsap.to('nav',{
+  y:10,
+  duration:1,
+  stagger:.25,
+  opacity:1
+})
+
+let tl = gsap.timeline({
+  scrollTrigger:{
+    trigger:'#page1',
+    scroller:'#main',
+    start:'0% 0%',
+    end:'100% 0%',
+    pin:true,
+    // markers:true,
+    scrub:.1
+  }
+})
+tl.to('.overlay',{
+  left:'0%',
+  duration:2,
+},'anem')
+
+tl.to('.overlay>img',{
+  left:'60%',
+  duration:2,
+  opacity:1
+},'anem')
+
+tl.to('.big-text',{
+  right:'35%',
+  duration:2,
+  zIndex:3,
+  color:'#fff'
+  // opacity:1
+},'anem')
+tl.to('.icons',{
+  color:'#fff'
+  // opacity:1
+},'anem')
