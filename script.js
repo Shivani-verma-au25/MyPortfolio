@@ -37,6 +37,12 @@ gsap.to('nav',{
   stagger:.25,
   opacity:1
 })
+// gsap.to('nav',{
+//   y:10,
+//   duration:1,
+//   stagger:.25,
+//   opacity:1
+// })
 
 let tl = gsap.timeline({
   scrollTrigger:{
@@ -59,7 +65,6 @@ tl.to('.overlay>img',{
   duration:2,
   opacity:1
 },'anem')
-
 tl.to('.big-text',{
   right:'35%',
   duration:2,
@@ -71,3 +76,51 @@ tl.to('.icons',{
   color:'#fff'
   // opacity:1
 },'anem')
+
+
+
+// *************** page 2******************
+
+let tl1 = gsap.timeline({
+  scrollTrigger:{
+    trigger:'#page2',
+    scroller:'#main',
+    start:'0% 0%',
+    end:'250% 0%',
+    // markers:true,
+    scrub:1,
+    pin:true
+  }
+})
+tl1.to('.inner-wrap-right>h1',{
+  top:'0%',
+  left:'20%',
+  duration:1,
+},'ttm')
+tl1.to('.image-div-p2>img',{
+  width:'100%',
+  duration:.5,
+},'ttm')
+tl1.to('.wrap-p2',{
+  y:-30,
+
+  satgger:.1,
+  opacity:1
+})
+
+
+// let tl2 = gsap.timeline('#page2',{
+//   scrollTrigger:{
+//     trigger:'#page2',
+//     scroller:'#main',
+//     start:'-30% 0%',
+//     end:'100% 0%',
+//     markers:true,
+//     scrub:3
+//   }
+// })
+// tl2.from('.skill-top',{
+//   y:-100,
+//   duration:1,
+//   stagger:.15
+// })
