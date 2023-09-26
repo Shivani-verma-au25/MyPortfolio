@@ -29,7 +29,7 @@ html,body{
 /* ************ page1 ************* */
 #page1{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     /* background-color: red; */
     position: relative;
 }
@@ -257,7 +257,7 @@ padding: 1vw 5vw;
 .inner-wrap-left{
     width: 30%;
     height: 100%;
-    /* background-color: greenyellow; */
+    background-color: #0d0c0c;
     position: relative;
     display: flex;
     align-items: center;
@@ -370,44 +370,65 @@ padding: 1vw 5vw;
 #page3{
     width: 100vw;
     height: 180vh;
-    background-color: yellow;
+    /* background-color: yellow; */
     position: relative;
 }
 .wapper-p3{
     width: 100%;
     height: 100%;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     position: relative;
+}
+.wapper-p3>h1{
+    font-size:3.vw;
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    text-transform: uppercase;
+}
+.wapper-p3>h1>#h{
+    color: #19725D;
+}
+.wapper-p3>h1>#l{
+    color: #78716c;
 }
 .inner-divs{
     width: 100%;
     height: 100%;
-    background-color: red;
-}
-.elem{
-    width: 100%;
-    height: 15%;
-    background-color: pink;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 11vw;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.elem{
+    width: 80%;
+    height: 15%;
+    background-color:#000000df ;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 11vw; */
+}
+.elem>img{
+    position: absolute;
 }
 .elm-left{
     width: 50%;
     height: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 .text{
     width: 100%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .text>p{
-    font-size:6vw;
+    font-size:5vw;
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Mukta', sans-serif;
@@ -417,7 +438,7 @@ padding: 1vw 5vw;
 .elm-ryt{
     width: 50%;
     height: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     position: relative;
 }
 .big-text-elm-r{
@@ -427,17 +448,18 @@ padding: 1vw 5vw;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 3vw;
+    /* padding-right: 3vw; */
 }
 .big-text-elm-r>p{
     font-size: 11vw;
     font-family: 'Mukta',sans-serif;
     color: rgba(128, 128, 128, 0.345);
+    font-weight: 900;
 }
 .overlay-bigtext{
     width: 100%;
     height: 100%;
-    background-color: #000000b1;
+    background-color: #0000003a;
     position: absolute;
     top: 0;
     display: flex;
@@ -445,9 +467,15 @@ padding: 1vw 5vw;
     justify-content: flex-end;
 }
 .overlay-bigtext>p{
-    font-size: 2vw;
+    font-size: .9vw;
     font-family: 'Mukta',sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     padding-right: 3vw;
+    color: #fff;
+    font-family: cursive;
 }
+
+
+
+

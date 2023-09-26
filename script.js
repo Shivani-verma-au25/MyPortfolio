@@ -99,7 +99,7 @@ tl1.to('.inner-wrap-right>h1',{
 },'ttm')
 tl1.to('.image-div-p2>img',{
   width:'100%',
-  duration:.5,
+  duration:.1,
 },'ttm')
 tl1.to('.wrap-p2',{
   y:-30,
