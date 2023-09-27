@@ -104,23 +104,61 @@ tl1.to('.image-div-p2>img',{
 tl1.to('.wrap-p2',{
   y:-30,
 
-  satgger:.1,
+  stagger:.1,
   opacity:1
 })
 
+// *************** Page 3 *******************
 
-// let tl2 = gsap.timeline('#page2',{
-//   scrollTrigger:{
-//     trigger:'#page2',
-//     scroller:'#main',
-//     start:'-30% 0%',
-//     end:'100% 0%',
-//     markers:true,
-//     scrub:3
-//   }
-// })
-// tl2.from('.skill-top',{
-//   y:-100,
-//   duration:1,
-//   stagger:.15
-// })
+// page3 card animation
+
+function customCursor(){
+  let cur = document.querySelector('#cursor')
+  window.addEventListener('mousemove',(e)=>{
+    cur.style.left = `${e.clientX}px`
+    cur.style.top = `${e.clientY}px`
+  })
+}
+customCursor()
+
+function cardAnimation(){
+  let cur = document.querySelector('#cursor')
+  let elem = document.querySelectorAll('.elem')
+  
+  elem.forEach(function(item){
+    // console.log(item.childNodes[5]);
+    item.addEventListener('mousemove',function(dets){
+      item.childNodes[5].style.left = `${dets.x}px`
+      item.childNodes[5].style.opacity = `${1}`
+      item.childNodes[5].style.scale = `${1.2}`
+    })
+
+    item.addEventListener('mouseleave',function(dets){
+      item.childNodes[5].style.left = `${dets.x}px`
+      item.childNodes[5].style.opacity = `${0}`
+      item.childNodes[5].style.scale = `${0}`
+    })
+  })
+
+  
+}
+cardAnimation()
+
+
+// gsap page3
+
+let tl2 = gsap.timeline({
+  scrollTrigger:{
+    trigger:'#page3',
+    scroller:'#main',
+    start:'0% 0%',
+    end:'100% 0%',
+    markers:true,
+    scrub:.15
+  }
+})
+tl2.to('.wapper-p3>h1',{
+  y:-50,
+  duration:1,
+
+})

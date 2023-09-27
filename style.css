@@ -22,9 +22,19 @@ html,body{
     --icont-font-color:#f5be0b;
     --icon-bg-color:#fef1c7;
 }
+#cursor{
+    width: 30px;
+    height: 30px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    position: fixed;
+    transition: all .1s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 9999;
+    mix-blend-mode: difference;
 
+}
 #main{
-    
+    /* overflow: hidden; */
 }
 /* ************ page1 ************* */
 #page1{
@@ -397,8 +407,9 @@ padding: 1vw 5vw;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
+    padding-bottom: 3vw;
     /* background-color: red; */
 }
 .elem{
@@ -409,10 +420,40 @@ padding: 1vw 5vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 0 11vw; */
+    position: relative;
+    border-bottom: .1vw solid var(--cards-color);
 }
 .elem>img{
     position: absolute;
+    width: 350px;
+    height: 200px;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    transition: all .4s ease;
+    opacity: 0;
+    scale: 0;
+    box-shadow: 0 0 10px var(--text-color);
+}
+
+.elem>a{
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    transform: translate(0%,-50%);
+    background-color:var(--text-color);
+    color: var(--bg-color);
+    padding: 1vw;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+#elem-img-div>img{
+    
+}
+#elem-img-div>a{
+    
 }
 .elm-left{
     width: 50%;
@@ -476,6 +517,11 @@ padding: 1vw 5vw;
     font-family: cursive;
 }
 
-
+/* ************** page4 ***************** */
+#page4{
+    width: 100vw;
+    height: 100vh;
+    background-color: palegreen;
+}
 
 
