@@ -16,8 +16,8 @@ html,body{
     /* --bg-color:#fafaf9; */
     --page-bg-color:#86efac;
     --text-color:#19725D;
-    --sec-text-color:#78716c;
-    --basic_color:#292524;
+    --sec-text-color:#2c2c2a;
+    --basic_color:#574e4b;
     --cards-color:#E0E2E5;
     --icont-font-color:#f5be0b;
     --icon-bg-color:#fef1c7;
@@ -30,7 +30,7 @@ html,body{
     position: fixed;
     transition: all .1s cubic-bezier(0.19, 1, 0.22, 1);
     z-index: 9999;
-    mix-blend-mode: difference;
+    mix-blend-mode:multiply;
 
 }
 #main{
@@ -380,7 +380,7 @@ padding: 1vw 5vw;
 #page3{
     width: 100vw;
     height: 180vh;
-    /* background-color: yellow; */
+    background-color:#000;
     position: relative;
 }
 .wapper-p3{
@@ -388,33 +388,61 @@ padding: 1vw 5vw;
     height: 100%;
     /* background-color: rebeccapurple; */
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.wapper-p3>h1{
+.wapper-p3>.heding-text{
     font-size:3.vw;
-    position: absolute;
-    left: 20%;
-    top: 5%;
+    position: relative;
+    /* left: 20%;
+    top: 5%; */
     text-transform: uppercase;
+    /* background-color: rebeccapurple; */
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
 }
-.wapper-p3>h1>#h{
+.heding-text>.m{
+    color: var(--sec-text-color);
+    /* background-color: green; */
+    width: fit-content;
+    height: 20%;
+    font-size: 2vw;
+    /* opacity: 0; */
+}
+.heding-text>.h{
     color: #19725D;
+    /* background-color: red; */
+    width: fit-content;
+    height: 15%;
+    font-size: 1.3vw;
 }
-.wapper-p3>h1>#l{
+.heding-text>.l{
     color: #78716c;
+    /* background-color: yellow; */
+    width: fit-content;
+    height: 15%;
+    font-size: 1.2vw;
 }
 .inner-divs{
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
-    padding-bottom: 3vw;
+    padding-top: 3vw;
     /* background-color: red; */
 }
 .elem{
     width: 80%;
-    height: 15%;
+    height: 19%;
     background-color:#000000df ;
     /* background-color: green; */
     display: flex;
@@ -447,6 +475,7 @@ padding: 1vw 5vw;
     padding: 1vw;
     border-radius: 50%;
     text-decoration: none;
+    z-index: 99;
 }
 
 #elem-img-div>img{
@@ -475,6 +504,8 @@ padding: 1vw 5vw;
     font-family: 'Mukta', sans-serif;
     color: var(--sec-text-color);
     text-transform: uppercase;
+    z-index: 1;
+    mix-blend-mode:exclusion;
 }
 .elm-ryt{
     width: 50%;
@@ -515,6 +546,7 @@ padding: 1vw 5vw;
     padding-right: 3vw;
     color: #fff;
     font-family: cursive;
+    /* z-index: 1; */
 }
 
 /* ************** page4 ***************** */

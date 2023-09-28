@@ -122,7 +122,6 @@ function customCursor(){
 customCursor()
 
 function cardAnimation(){
-  let cur = document.querySelector('#cursor')
   let elem = document.querySelectorAll('.elem')
   
   elem.forEach(function(item){
@@ -151,14 +150,29 @@ let tl2 = gsap.timeline({
   scrollTrigger:{
     trigger:'#page3',
     scroller:'#main',
-    start:'0% 0%',
-    end:'100% 0%',
-    markers:true,
-    scrub:.15
+    start:'0% 90%',
+    end:'40% 50%',
+    // markers:true,
+    scrub:.1
   }
 })
-tl2.to('.wapper-p3>h1',{
+tl2.to('.heding-text>.m>h2',{
   y:-50,
-  duration:1,
+  x:20,
+  duration:.5,
+  stagger:.1,
+  opacity:1
+},'anme')
+tl2.to('.heding-text>.h>h2',{
+  y:-50,
+  x:-25,
+  duration:.5,
+  stagger:.1
+},'anme')
+tl2.to('.heding-text>.l>h2',{
+  y:-50,
+  x:20,
+  duration:.5,
+  stagger:.1
+},'anme')
 
-})
