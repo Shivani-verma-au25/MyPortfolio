@@ -176,3 +176,66 @@ tl2.to('.heding-text>.l>h2',{
   stagger:.1
 },'anme')
 
+// *********** page4**********************
+
+let tl3 = gsap.timeline({
+  scrollTrigger:{
+    trigger:'.wrappper-p4',
+    scroller:'#main',
+    start:'0% 100%',
+    end:'100% 0%',
+    // markers:true,
+    scrub:.15,
+  }
+})
+tl3.to('#page4>h1',{
+    top:'-40%',
+    duration:1,
+},"mm")
+tl3.to('.circle',{
+  rotate:-90,
+  duration:1,
+  ease:Expo.easeInOut,
+  stagger:1,
+  opacity:0
+},"mm")
+
+let active = 2
+
+let mini_ico = document.querySelectorAll('.min-icons')
+gsap.to(mini_ico[active-1],{
+  opacity:.7
+})
+
+let sec = document.querySelectorAll('.second')
+
+gsap.to(sec[active-1],{
+  opacity:.7
+})
+
+mini_ico.forEach(function(val,idx){
+  val.addEventListener('click',function(){
+    // alert('chla')
+    gsap.to('.circle',{
+      rotate:(2-(idx+1))*20
+    })
+    grayOut()
+    gsap.to(this,{
+      opacity:.7
+    })
+    gsap.to(sec[idx],{
+      opacity:1
+    })
+  })
+})
+
+
+function grayOut(){
+  gsap.to(mini_ico,{
+    opacity:.08
+  })
+  gsap.to(sec,{
+    opacity:.4
+  })
+}
+
