@@ -191,4 +191,37 @@
         height: 100px;
         top: auto;
     }
+    /* page4 */
+    #page4{
+        width: 100%;
+        height: 100%;
+    }
+    #page4>h1 {
+        font-size: 27vw;
+    }
+    .wrappper-p4>.circle {
+        left: -200%;
+        width: 620px;
+        height: 620px;
+    }
+    .panel>.min-icons {
+        width: 3.9vw;
+        height: 3.9vw;
+    }
+    .circle>.stripe {
+        width: 100%;
+        height: 24%;
+    }
+    .stripe>.second>h2 {
+        font-size: 5vw;
+    }
+    .stripe>.second>p {
+        font-size: 1.5vw;
+        line-height: 1.2;
+    }
+    .stripe>.first>h5{
+        font-size: 7vw;
+        right: -6%;
+        top: 12%;
+    }
 }

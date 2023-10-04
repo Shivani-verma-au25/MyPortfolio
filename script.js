@@ -180,25 +180,25 @@ tl2.to('.heding-text>.l>h2',{
 
 let tl3 = gsap.timeline({
   scrollTrigger:{
-    trigger:'.wrappper-p4',
+    trigger:'#page4',
     scroller:'#main',
-    start:'0% 100%',
-    end:'100% 0%',
+    start:'50% 90%',
+    end:'50% 80%',
     // markers:true,
-    scrub:.15,
+    scrub:4,
   }
 })
 tl3.to('#page4>h1',{
-    top:'-40%',
+    top:'0%',
     duration:1,
 },"mm")
 tl3.to('.circle',{
-  rotate:-90,
+  rotate:0,
   duration:1,
   ease:Expo.easeInOut,
   stagger:1,
-  opacity:0
-},"mm")
+  // opacity:0
+})
 
 let active = 2
 
@@ -217,7 +217,7 @@ mini_ico.forEach(function(val,idx){
   val.addEventListener('click',function(){
     // alert('chla')
     gsap.to('.circle',{
-      rotate:(2-(idx+1))*20
+      rotate:(2-(idx+1))*25
     })
     grayOut()
     gsap.to(this,{
