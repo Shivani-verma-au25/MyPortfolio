@@ -59,9 +59,8 @@ tl.to('.overlay',{
   left:'0%',
   duration:2,
 },'anem')
-
-tl.to('.overlay>img',{
-  left:'60%',
+tl.to('.right-overlay',{
+  left:'70%',
   duration:2,
   opacity:1
 },'anem')
@@ -238,4 +237,26 @@ function grayOut(){
     opacity:.4
   })
 }
+
+// ***************** pnada ************************
+
+function handPAnda(){
+  let wave = document.querySelector('.wave')
+  let input = document.querySelector('#n-1')
+  let lft_hand = document.querySelector('.hand-l')
+
+  input.addEventListener('mouseenter',()=>{
+    console.log('hello');
+    wave.style.rotate = `${-160}deg`
+    wave.style.top = `${12}%`
+    lft_hand.style.display = 'none'
+  })
+  input.addEventListener('mouseleave',()=>{
+    console.log('hello');
+    wave.style.rotate = `${0}deg`
+    wave.style.top = `${34}%`
+    lft_hand.style.display = "initial"
+  })
+}
+handPAnda()
 

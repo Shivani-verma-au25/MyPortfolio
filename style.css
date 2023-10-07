@@ -21,6 +21,7 @@ html,body{
     --cards-color:#E0E2E5;
     --icont-font-color:#f5be0b;
     --icon-bg-color:#fef1c7;
+    /* fill="#FF0066" */
 }
 #cursor{
     width: 30px;
@@ -225,6 +226,7 @@ padding: 1vw 5vw;
 .text-overlay{
     width: 100%;
     height: 100%;
+    /* background-color: rebeccapurple; */
     position: relative;   
 }
 .text-overlay>p{
@@ -232,23 +234,56 @@ padding: 1vw 5vw;
     /* background-color: red; */
     position: absolute;
     bottom: 2vw;
-    width: 30%;
+    width: 25%;
     font-size: 1.2vw;
     padding: 1vw 5vw;
     font-family: 'Fuggles', cursive;
 
 }
-.overlay>img{
-    padding-inline: 10vw;
-    /* width: 50%; */
-    height: 80%;
-    opacity: 0;
+.right-overlay{
+    width: 350px;
+    height: 350px;
+    /* background-color: green; */
+    /* margin: 0 2vw; */
     position: absolute;
-    left: 0;
-    /* top: -15%; */
-    z-index: 9;
-    mix-blend-mode:difference;
+    left: 0%;
+    top: 30%;
+    overflow: hidden;
+    border: .2vw solid var(--text-color);
+    border-radius: 40% 30% 40% 30%;
+    /* background-color: var(--text-color); */
 }
+.right-overlay>img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position:center ;
+    scale: 1;
+    transition: all .4s ease-in-out;
+    overflow: hidden;
+}
+.r-overlay{
+    width: 100%;
+    height: 100%;
+    background-color:#00000088;
+    position: absolute;
+    z-index: 2;
+    /* border: .2vw solid var(--text-color); */
+    transition: all .4s ease-in-out;
+   
+}
+.right-overlay:hover img{
+    border-color: var(--page-bg-color);
+    scale: 1.1;
+}
+.right-overlay>svg{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 /* ************ page2 ************** */
 #page2{
     width: 100vw;
@@ -655,7 +690,34 @@ padding: 1vw 5vw;
     font-weight: 700;
     font-style: italic;
     transition: color .4s ease;
-    cursor: pointer;
+    cursor: pointer;   
+}
+.second>p>strong{
+    font-weight: 100;
+}
+.cr>ul>li{
+    font-size: .9vw;
+    font-weight: 100;
+}
+.cr>ul>li>strong{
+    color: var(--text-color);
+    font-family: 'Fuggles',cursive;
+    text-transform: uppercase;
+}
+.cr>ul>li>a{
+    color: var(--cards-color);
+    text-decoration: none;
+    font-size: 1.1vw;
+    margin: 0 .5vw;
+    
+}
+.cr>ul>li>a>i{
+    color: var(--text-color);
+    transition: all .4s ease-in-out;
+}
+.cr>ul>li>a>i:hover{
+    color: var(--page-bg-color);
+    font-size: 2vw;
 }
 .second>p>span:hover{
     color: var(--page-bg-color);
@@ -701,8 +763,80 @@ padding: 1vw 5vw;
 .p5-left{
     width: 50%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    
     /* background-color: rebeccapurple; */
 }
+.img-log{
+    width: 20%;
+    height: 30%;
+    margin-right: 40vw;
+}
+.img-log>img{
+    height: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0%;
+}
+.container-img{
+    width: 70%;
+    height: 70%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.image-div-p5{
+    height: 50%;
+    width: 50%;
+    border: .2vw solid var(--sec-text-color);
+    border-radius: .2vw;
+    /* background-color: pink; */
+
+}
+.image-div-p5>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .2vw;
+}
+.image-div-p5>img:hover {
+    border-color: var(--page-bg-color);
+}
+.resume{
+    width: 50%;
+    height: 20%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.resume>a{
+    text-decoration: none;
+    background-color: var(--text-color);
+    font-size: 1.3vw;
+    padding: .6vw 1vw;
+    border-radius: .4vw;
+    color: var(--cards-color);
+    font-family: 'Fuggles',cursive;
+    font-weight: 400;
+    transition: all .4s ease;
+}
+.resume>a:hover{
+    background-color: var(--page-bg-color);
+    color: var(--text-color);
+
+}
+
+/* right part */
 .p5-ryt{
     width: 50%;
     height: 100%;
@@ -726,6 +860,18 @@ padding: 1vw 5vw;
     align-items: center;
     justify-content: center;
 }
+.wave{
+    width: 55px;
+    height: 150px;
+    background-color: var(--sec-text-color);
+    position: absolute;
+    top: 31%;
+    left: 22.2%;
+    border-radius: 0 0 50px 50px;
+    rotate: 0deg;
+    transition: all .4s ease-in-out;
+}
+
 .hand-l{
     width: 55px;
     height: 60px;
@@ -733,8 +879,71 @@ padding: 1vw 5vw;
     border-radius: 0% 0% 50% 50%; 
     position: absolute;
     top: 30%;
-    left: 25%;
+    left: 20%;
     z-index: 2;
+    transition: all .2s ease;
+}
+.leg-l{
+    width: 55px;
+    height: 60px;
+    background-color: var(--sec-text-color);
+    border-radius: 50% 50% 20% 20%;
+    position: absolute;
+    bottom:0 ;
+    left: 28%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.dot-leg{
+    width: 44px;
+    height: 50px;
+    /* background-color: var(--bg-color); */
+    background-color: var(--sec-text-color);
+    border-radius: 50% 50% 20% 20%;
+    position: relative;
+    padding: .2vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .4vw;
+}
+.d{
+    width: 7px;
+    height: 7px;
+    background-color: var(--cards-color);
+    border-radius: 50%;
+}
+.d-1{
+    margin-top: .4vw;
+}
+.d-3{
+    margin-top: .4vw;
+}
+.feet{
+    width: 40px;
+    height: 30px;
+    background-color: var(--cards-color);
+    position: absolute;
+    bottom: 10%;
+    padding-bottom: .3vw;
+    border-radius: 50% 50% 20% 20%;
+
+}
+.leg-r{
+    width: 55px;
+    height: 60px;
+    background-color: var(--sec-text-color);
+    border-radius: 50% 50% 20% 20%;
+    position: absolute;
+    bottom:0 ;
+    right: 29%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hand-ryt{
     width: 55px;
@@ -743,7 +952,7 @@ padding: 1vw 5vw;
     border-radius: 0% 0% 50% 50%; 
     position: absolute;
     top: 30%;
-    left: 65%;
+    left: 70%;
     z-index: 4;
 }
 .head{
@@ -778,7 +987,7 @@ padding: 1vw 5vw;
     position: absolute;
     top:-23%;
     left: 69%;
-    rotate: 34deg;
+    rotate: 30deg;
     z-index: -1;
 }
 .letf-eye{
@@ -873,7 +1082,7 @@ padding: 1vw 5vw;
 form{
     width: 100%;
     height: 100%;
-    /* background-color: green; */
+    background-color:#f6f4f1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -956,10 +1165,11 @@ input{
 }
 .msg>input{
     width: 85%;
-    height: 100%;
+    height: 40%;
     outline: none;
     border:.1vw solid var(--text-color);
     border-radius: .2vw;
+
 }
 .container {
     /* width: 400px;
