@@ -238,6 +238,59 @@ function grayOut(){
   })
 }
 
+// *********** page3 animation ********************
+let al = gsap.timeline({
+  scrollTrigger:{
+    trigger:'.inner-divs',
+    scroller:'#main',
+    start:'0% 0%',
+    end:'bottom 0%',
+    // markers:true,
+    // scrub:1
+  }
+})
+al.to('.inner-divs>.elem',{
+  y:-50,
+  duration:.2,
+  stagger:.2,
+  opacity:1
+
+})
+
+// ******************* page5 ****************************
+
+let al2 = gsap.timeline({
+  scrollTrigger:{
+    trigger:'.wrapper-p5',
+    scroller:'#main',
+    start:'0% 80%',
+    end:'0% 0%',
+    // markers:true,
+    scrub:5
+  },
+  duration:.1,
+  stagger:.2,
+})
+al2.to('.img-log',{
+  opacity:1
+},'anime')
+al2.to('.image-div-p5',{
+  y:-30,  
+  opacity:1
+},'anime')
+al2.to('.resume',{
+  y:-30,
+  opacity:1  
+},'anime')
+al2.to('.card',{
+  y:-30, 
+  opacity:1 
+},'anime')
+al2.to('h3',{
+  y:-10, 
+  opacity:1 
+},'anime')
+
 // ***************** pnada ************************
 
 function handPAnda(){

@@ -485,11 +485,12 @@ padding: 1vw 5vw;
     justify-content: center;
     position: relative;
     border-bottom: .1vw solid var(--cards-color);
+    opacity: 0;
 }
 .elem>img{
     position: absolute;
     width: 350px;
-    height: 200px;
+    height: 170px;
     z-index: 1;
     top: 0;
     left: 50%;
@@ -498,6 +499,7 @@ padding: 1vw 5vw;
     opacity: 0;
     scale: 0;
     box-shadow: 0 0 10px var(--text-color);
+    opacity: 0;
 }
 
 .elem>a{
@@ -774,6 +776,7 @@ padding: 1vw 5vw;
     width: 20%;
     height: 30%;
     margin-right: 40vw;
+    opacity: 0;
 }
 .img-log>img{
     height: 100%;
@@ -798,7 +801,7 @@ padding: 1vw 5vw;
     border: .2vw solid var(--sec-text-color);
     border-radius: .2vw;
     /* background-color: pink; */
-
+    opacity: 0;
 }
 .image-div-p5>img{
     width: 100%;
@@ -818,6 +821,7 @@ padding: 1vw 5vw;
     align-items: center;
     justify-content: center;
     gap: 2vw;
+    opacity: 0;
 }
 .resume>a{
     text-decoration: none;
@@ -829,6 +833,7 @@ padding: 1vw 5vw;
     font-family: 'Fuggles',cursive;
     font-weight: 400;
     transition: all .4s ease;
+    
 }
 .resume>a:hover{
     background-color: var(--page-bg-color);
@@ -850,6 +855,7 @@ padding: 1vw 5vw;
     width: 95%;
     height: 95%;
     /* background-color: pink; */
+    opacity: 0;
 }
 /* **************** Panda *************** */
 .panda{
@@ -1229,3 +1235,18 @@ input{
     font-weight: 100;
     font-family: 'Fuggles', cursive;
   }
+
+
+
+h3{
+    text-align: center;
+    opacity: 0;
+} 
+h3>span{
+    color: #19725D;
+    transition: all .3s ease;
+} 
+h3>span:hover{
+    color: #86efac;
+    cursor: pointer;
+}
