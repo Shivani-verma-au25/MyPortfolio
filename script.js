@@ -60,12 +60,12 @@ tl.to('.overlay',{
   duration:2,
 },'anem')
 tl.to('.right-overlay',{
-  left:'70%',
+  left:'0%',
   duration:2,
   opacity:1
 },'anem')
 tl.to('.big-text',{
-  right:'35%',
+  right:'25%',
   duration:2,
   zIndex:3,
   color:'#fff'
@@ -199,11 +199,12 @@ tl3.to('.circle',{
   // opacity:0
 })
 
+
 let active = 2
 
-let mini_ico = document.querySelectorAll('.min-icons')
-gsap.to(mini_ico[active-1],{
-  opacity:.7
+let mini = document.querySelectorAll('.mncircle')
+gsap.to(mini[active-1],{
+  opacity:.8
 })
 
 let sec = document.querySelectorAll('.second')
@@ -212,11 +213,12 @@ gsap.to(sec[active-1],{
   opacity:.7
 })
 
-mini_ico.forEach(function(val,idx){
+mini.forEach(function(val,idx){
   val.addEventListener('click',function(){
-    // alert('chla')
     gsap.to('.circle',{
-      rotate:(2-(idx+1))*25
+      rotate:(2-(idx+1))*30,
+      ease:Expo.easeInOut,
+      duration:1
     })
     grayOut()
     gsap.to(this,{
@@ -230,13 +232,20 @@ mini_ico.forEach(function(val,idx){
 
 
 function grayOut(){
-  gsap.to(mini_ico,{
+  gsap.to(mini,{
     opacity:.08
   })
   gsap.to(sec,{
     opacity:.4
   })
 }
+
+let link = document.querySelector('.second>p>a')
+console.log(link);
+link.addEventListener('click',()=>{
+  link.style.backgroundColor = "yellow"
+  alert('hello')
+})
 
 // *********** page3 animation ********************
 let al = gsap.timeline({
@@ -302,14 +311,33 @@ function handPAnda(){
     console.log('hello');
     wave.style.rotate = `${-160}deg`
     wave.style.top = `${12}%`
-    lft_hand.style.display = 'none'
+    lft_hand.style.opacity = 0
   })
   input.addEventListener('mouseleave',()=>{
     console.log('hello');
     wave.style.rotate = `${0}deg`
     wave.style.top = `${34}%`
-    lft_hand.style.display = "initial"
+    lft_hand.style.opacity = 1
+
   })
 }
 handPAnda()
 
+
+
+// shery js
+
+// Shery.mouseFollower({
+//   //Parameters are optional.
+//   skew: true,
+//   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+//   duration: 1,
+// });
+
+// Shery.imageMasker(".mask-target" /* Element to target.*/, {
+//   //Parameters are optional.
+//   mouseFollower: true,
+//   text: "Shery",
+//   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+//   duration: 1,
+// });
