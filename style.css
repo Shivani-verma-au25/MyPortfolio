@@ -123,12 +123,12 @@ nav{
 
 #hero{
     width: 100%;
-    height: calc(100% - 10%);
+    height:calc(100% - 10%);
     /* background-color: yellow; */
 }
 .hero-top{
     width: 100%;
-    height: 70%;
+    height: 85%;
     /* background-color: green; */
 }
 .big-text{
@@ -147,7 +147,7 @@ nav{
 .big-text>h1{
     font-size: 7vw;
     font-weight: 700;
-    padding: 1vw 4vw;
+    padding: 1vw 1vw;
     width: fit-content;
     /* background-color: rebeccapurple; */
     line-height: 1;
@@ -160,10 +160,11 @@ nav{
 }
 .hero-bottom{
     width: 100%;
-    height: 30%;
+    height: 10%;
     /* background-color: pink; */
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 .h-btm-lft{
     width: 50%;
@@ -189,25 +190,40 @@ nav{
     /* background-color: gray; */
 }
 .h-btm-ryt>.icons{
-width: 100%;
-height: 100%;
-position: relative;
-display: flex;
-align-items: flex-end;
-justify-content: flex-end;
-gap: 1vw;
-padding: 1vw 5vw;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 1vw;
+    padding: 1vw 1vw;
 }
+.icons>p{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vw;
+    font-size: 2vw;
+    text-transform: capitalize;
+}
+
 .icons>p>a{
     font-weight: 400;
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    font-size: 1.1vw;
+    font-size: 2vw;
+    cursor: pointer;
 }
-.icons>i{
+/* .small-txt>p:nth-child(1){
+    margin-top: 16vw;
+} */
+.icons>p>i{
     width: fit-content;
     font-size: 2vw;
     font-weight: 600;
+    cursor: pointer;
     /* background-color: rebeccapurple; */
 }
 
@@ -226,10 +242,10 @@ padding: 1vw 5vw;
     /* opacity: 0; */
 }
 .text-overlay{
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    /* background-color: rebeccapurple; */
-    position: relative;   
+    background-color: rebeccapurple; 
+    position: relative;    */
 }
 .text-overlay>p{
     color: #fff;
@@ -238,29 +254,27 @@ padding: 1vw 5vw;
     bottom: 0vw;
     width: 25%;
     font-size: 1.2vw;
-    padding: 1vw 5vw;
+    padding: 1vw 2vw;
     font-family: 'Fuggles', cursive;
 
 }
 .right-overlay{
     width: 100%;
     height: 100%;
+    /* padding: 0 2vw; */
     /* background-color: green; */
     /* margin: 0 2vw; */
     position: absolute;
     left: 0%;
-    /* top: 30%; */
+    top: 0%;
     overflow: hidden;
     
 }
 .right-overlay>img{
-    height: 140%;
+    height: 130%;
     width: 100%;
     object-fit:cover;
     object-position:center;
-    /* scale: .7; */
-    /* transition: all .4s ease-in-out; */
-    overflow: hidden;
 }
 .r-overlay{
     width: 100%;
@@ -596,7 +610,7 @@ padding: 1vw 5vw;
     top: 50%;
     left: 80%;
     transform: translate(-50% ,0);
-    z-index:999;
+    z-index:99999;
     color: #fff;
     text-transform: uppercase;
     font-size: 12vw;
@@ -617,8 +631,8 @@ padding: 1vw 5vw;
     top:50%;
     left:-50% ;
     transform: translate(0%,-50%) rotate(100deg);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
     border-radius: 50%;
     /* background-color: #dadada; */
     display: flex;
@@ -628,13 +642,14 @@ padding: 1vw 5vw;
 }
 .stripe{
     width: 100%;
-    height: 60px;
+    height: 30px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(0%,-50%);
-    transform-origin: 0% 50%; 
+    transform-origin: -2% 50%; 
     display: flex;
+    /* background-color: rebeccapurple; */
 }
 .str1{
     transform: translate(0,50%) rotate(-30deg);
@@ -651,23 +666,27 @@ padding: 1vw 5vw;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    /* background-color: red; */
 }
 .first>h4{
-    font-size: 6vw;
+    font-size: 3vw;
     position: absolute;
-    left: 45%;
+    left: 50%;
 }
 .second{
-    width: 35%;
+    width: 45%;
     height: 100%;
     padding: 0 2.2vw;
     opacity: .1;
+    /* background-color: pink; */
 }
 .second>h5{
     font-size: 3vw;
     text-align: left;
     text-transform: uppercase;
     color: var(--text-color);
+    margin-left: 2vw;
+    padding-right: 5vw;
 }
 .second>p{
     text-align: left;
@@ -675,6 +694,7 @@ padding: 1vw 5vw;
     font-size: 1.2vw;
     width: 100%;
     transition: all .3s ease;
+    margin-left: 2vw;
 }
 .second>p>span{
     color: var(--text-color);
@@ -693,6 +713,12 @@ padding: 1vw 5vw;
 }
 .second>p>a:hover {
     color: var(--page-bg-color);
+}
+.str3>.first>h4{
+    left: 48.5%;
+}
+.str3>.second>h5{
+    margin-left: 0;
 }
 .panel{
     width: 5%;

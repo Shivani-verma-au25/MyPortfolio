@@ -1,0 +1,341 @@
+@media all and (max-width:1200px) {
+    #page4>.wrapper-4>.circle {
+        left: -63%;
+        width: 95vw;
+        height: 95vw;
+    }
+    .second>p {
+        padding: 0 3vw;
+    }
+    .second>h5 {
+        padding: 0 3vw;
+    }
+    .stripe>.second {
+        width: 50%;
+    }
+    .upper>.name {
+        width: 45%;
+    }
+    .name>.email {
+        width: 45%;
+    }
+    .lower>.sub>input {
+        width: 90%;
+        padding: 0 1vw;
+    }
+    .lower>.msg>input {
+        width: 90%;
+        padding: 0 1vw;
+    }
+    .card>.leg-l {        
+        left: 23%;
+    }
+    .card>.leg-r {
+        right: 23%;
+    }
+}
+
+
+
+ @media all and (max-width:950px) {
+   
+
+    .inner-divs>.elem>img {
+        width: 260px;
+        height: 150px;
+        top: 10%;
+    }
+    #page4 {
+        width: 100%;
+        height: 100%;
+    }
+    #page4>h1 {
+        font-size: 14vw;
+    }
+
+    #page4>.wrapper-4>.circle {
+        left: -63%;
+        width: 100vw;
+        height: 100vw;
+    }
+    #page4>.wrapper-4>.circle {
+        left: -89%;
+        width: 1000px;
+        height: 1000px;
+    }
+    .wrapper-4>.panel {
+        right: 14px;
+        cursor: pointer;
+    }
+    .stripe>.second>h5 {
+        font-size: 5vw;
+    }
+    .stripe>.second>p {
+        font-size: 1.5vw;
+    }
+    .stripe>.second>p>span {
+        font-size: 1.9vw;
+    }
+    .stripe>.second>p>a {
+        font-size: 2vw;
+    }
+    #page5 {
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper-p5>.p5-left{
+        width: 35%;
+    }
+    .wrapper-p5>.p5-ryt{
+        width: 65%;
+    }
+    .p5-left>.container-img {
+        width: 100%;
+        height: 65%;     
+        justify-content: center;
+        flex-direction: column;
+        left: -6%;
+    }
+    .container-img>.image-div-p5 {
+        height: 50%;
+        width: 73%;
+    }
+    .container-img>.resume>a {
+        font-size: 2.3vw;
+    }
+    .panda>.head {
+        margin-top: 5vw;
+    }
+    .contact-card>form>.upper>.name {
+        width: 50%;
+    }
+    .upper>.name {
+        flex-direction: row;
+    }
+    .upper>.name>input {
+        width: 95%;
+        height: 3vw;
+        padding: 0 1vw;
+    }
+    .contact-card>form>.upper>.email {
+        width: 50%;
+    }
+    .upper>.email>input {
+        width: 95%;
+        height: 3vw;
+        padding: 0 1vw;
+    }
+    .lower>.sub>input {
+        width: 98%;
+        height: 3vw;
+        padding: 0 1vw;
+    }
+    .lower>.msg>input {
+        width: 98%;
+    }
+    .center>.btn span {
+        font-size: 2.3vw;
+    }
+
+} 
+
+
+@media all and (max-width:750px) {
+    .h-btm-ryt>.icons>p>i {
+        font-size: 2vw;
+    }
+    .h-btm-ryt>.icons>p>a {  
+        font-size: 3vw;
+    }
+    #page2 {
+        width: 100%;
+        height: 100%;
+    }
+    #page2 >.wrapper-p2 {
+        flex-direction: column;
+    }
+    .wrapper-p2>.inner-wrap-left {
+        width: 100%;
+    }
+    .wrapper-p2>.inner-wrap-right {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .inner-wrap-left>.image-div-p2 {
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper-p2>.inner-wrap-right>h1 {
+        font-size: 35vw;
+        left: 6%;
+    }
+    .skill-part>.skill-top {
+        width: 100%;
+        height: 50%;
+        /* margin: 55vw 0;
+        position: absolute;
+        top: -16%;
+        left: 24%; */
+    }
+    .skill-part>.skill-bottom {
+        width: 100%;
+        height: 50%;
+    }
+    .skill-top>.wrap-p2>h2 {
+        font-size: 3.4vw;
+    }
+    .skill-bottom>.wrap-p2>h2 {
+        font-size: 3.4vw;
+    }
+    .wrap-p2>ul>li {
+        font-size: 3.5vw;
+    }
+    .skill-top>.wrap-p2>ul>li>i {
+        font-size: 4vw;
+    }
+    .skill-bottom>.wrap-p2>ul>li>i {
+        font-size: 4vw;
+    }
+    #page3 {
+        width: 100%;
+        height: 100%;
+    }
+    #page3>.wapper-p3>.heding-text {
+        height: 10%;
+    }
+
+    #page4 {
+        width: 100%;
+        height: 100%;
+    }
+    #page4>h1{
+        /* font-size: 14vw; */
+    }
+    #page4>.wrapper-4>.circle {
+        left: -85%;
+        width: 700px;
+        height: 700px
+    }
+    .circle>.stripe >.second>p {
+        /* font-size: 1.8vw; */
+    }
+    .stripe>.second>h5 {
+        font-size: 6vw;
+    }
+    .stripe >.second>p {
+        font-size: 1.5vw;
+    }
+    #page5{
+        width: 100%;
+        height: 100%;
+    }
+    #page5>.wrapper-p5 {
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper-p5 {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .wrapper-p5>.p5-left {
+        width: 70%;
+        height: 40%;
+    }
+    .wrapper-p5>.p5-ryt {
+        width: 100%;
+        height: 60%;
+    }
+    .p5-left>.container-img {
+        width: 75%;
+        height: 100%;
+    }
+    .p5-left>.img-log>img {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    #page5>h3{
+        position: absolute;
+        top: 98%;
+        left: 25%;
+    }
+    .card {
+        width: 100%;
+        height: 100%;
+        padding: 0 2vw;
+    }
+    form {
+        padding: 0 2vw;
+    }
+    .panda>.head {
+        margin-top: -3vw;
+    }
+    .panda>.nose{
+        top: 19%;
+    }
+    .upper>.name>input {
+        height: 4vw;
+        padding: 0 1vw;
+    }
+    .upper>.email>input {
+        height: 4vw;
+        padding: 0 1vw;
+    }
+    .lower>.sub>input {
+        height: 4vw;
+        padding: 0 1vw;
+    }
+    .container-img>.resume>a {
+        text-decoration: none;
+        background-color: var(--text-color);
+        font-size: 2.3vw;
+    }
+    .center>.btn span {
+        color: white;
+        font-size: 3.3vw;
+    }
+}
+
+@media all and (max-width:500px) {
+    #page4 {
+        width: 100%;
+        height: 100%;
+    }
+    #page4>.wrapper-4>.circle {
+        left: -100%;
+        width: 600px;
+        height: 600px;
+    }
+    .circle>.stripe >.second>p {
+        font-size: 2.2vw;
+    }
+    .upper>.name>input {
+        height: 6vw;
+        padding: 0 1vw;
+    }
+    .upper>.email>input {
+        height: 6vw;
+        padding: 0 1vw;
+    }
+    .lower>.sub>input {
+        height: 6vw;
+        padding: 0 1vw;
+    }
+    .lower>.msg>input {
+        width: 98%;
+        height: 10vw;
+        padding: 0 1vw;
+    }
+    .panda>.head {
+        width: 160px;
+        height: 140px;
+    }
+    .container-img>.resume>a {
+        font-size: 3.3vw;
+    }
+}
+

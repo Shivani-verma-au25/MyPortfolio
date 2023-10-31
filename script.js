@@ -66,12 +66,13 @@ tl.to('.right-overlay',{
 },'anem')
 tl.to('.big-text',{
   right:'25%',
+  top:'20%',
   duration:2,
   zIndex:3,
   color:'#fff'
   // opacity:1
 },'anem')
-tl.to('.icons',{
+tl.to('.icons>p,.icons>p>a',{
   color:'#fff'
   // opacity:1
 },'anem')
