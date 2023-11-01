@@ -629,7 +629,7 @@ nav{
 .circle{
     position: absolute;
     top:50%;
-    left:-50% ;
+    left:-60% ;
     transform: translate(0%,-50%) rotate(100deg);
     width: 100vw;
     height: 100vw;

@@ -301,17 +301,76 @@
 }
 
 @media all and (max-width:500px) {
+    .hero-top {
+        width: 100%;
+        height: 90%;
+    }
+    .small-txt {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    .h-btm-ryt>.icons>p>i {
+        font-size: 4vw;
+    }
+    .elem>.elm-left {
+        width: 100%;
+    }
+    .inner-divs>.elem>img {
+        width: 150px;
+        height: 88px;
+        top: 29%;
+    }
+    .elm-ryt>.overlay-bigtext>p {
+        font-size: 1.9vw;
+    }
+    .big-text-elm-r>p {
+        font-size: 17vw;
+    }
+    .hero-top>.big-text>h2 {
+        font-size: 9vw;
+    }
+    
+    .hero-top>.big-text>h1{
+        font-size: 16vw;
+    }
     #page4 {
         width: 100%;
         height: 100%;
     }
-    #page4>.wrapper-4>.circle {
-        left: -100%;
-        width: 600px;
-        height: 600px;
+    #page4>h1 {
+        font-size: 25vw;
     }
+    #page4>.wrapper-4>.circle {
+        left: -82%;
+        width: 400px;
+        height: 400px;
+    }
+        
     .circle>.stripe >.second>p {
         font-size: 2.2vw;
+        width: 171%;
+    }
+    .circle>.str1>.first>h4{
+        left: 53%;
+        z-index: 2;
+    }
+    .circle>.str3>.first>h4{
+        left: 46%;
+        z-index: 2;
+    }
+    .circle>.str2>.second>h5{
+        margin: 0 .5vw;
+    }
+    .circle>.str2>.second>p{
+        margin: 0 .5vw;
+    }
+    .circle>.str3>.second>h5{
+        margin: 0 -5vw;
+    }
+    .circle>.str3>.second>p{
+        margin: 0 -5vw;
     }
     .upper>.name>input {
         height: 6vw;
@@ -331,11 +390,55 @@
         padding: 0 1vw;
     }
     .panda>.head {
-        width: 160px;
-        height: 140px;
+        width: 136px;
+        height: 130px;
+    }
+    .head>.ear-l {
+        width: 48px;
+        height: 44px;
+    }
+    .head>.ear-r {
+        width: 48px;
+        height: 46px;
+        top: -24%;
+        left: 63%;
+        rotate: 29deg;
+    }
+    .card>.hand-l {
+        width: 43px;
+        height: 50px;
+    }
+    .card>.hand-ryt {
+        width: 42px;
+        height: 50px;
+    }
+    .card>.leg-l {
+        width: 48px;
+        height: 58px;
+    }
+    .card>.leg-r {
+        width: 49px;
+        height: 57px;
+    }
+    .card>.wave {
+        width: 40px;
+        height: 150px;
     }
     .container-img>.resume>a {
         font-size: 3.3vw;
     }
 }
 
+
+@media all and (max-350px) {
+    #page4 {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .wrapper-4>.circle {
+        left: -82%;
+        width: 282px;
+        height: 300px;
+    }
+}
