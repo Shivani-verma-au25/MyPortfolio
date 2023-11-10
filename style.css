@@ -739,7 +739,7 @@ nav{
     border-radius: 50%;
     background-color: grey;
     opacity: .1;
-
+    cursor: pointer;
 
 }
 
@@ -962,7 +962,7 @@ nav{
     height: 150px;
     /* background-color: red; */
     border-radius: 50% 50% 35% 35%;
-    margin-top: 3vw;
+    margin-top: 4vw;
     position: relative;
     display: flex;
     align-items: center;
