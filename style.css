@@ -198,6 +198,7 @@ nav{
     justify-content: flex-end;
     gap: 1vw;
     padding: 1vw 1vw;
+    cursor: pointer;
 }
 .icons>p{
     text-decoration: none;
@@ -216,6 +217,12 @@ nav{
     font-size: 2vw;
     cursor: pointer;
 }
+.icons:hover #f1 i{
+    color: var(--text-color);
+}
+.icons:hover #f2 i{
+    color: var(--text-color);
+}
 /* .small-txt>p:nth-child(1){
     margin-top: 16vw;
 } */
@@ -224,6 +231,7 @@ nav{
     font-size: 2vw;
     font-weight: 600;
     cursor: pointer;
+    transition: all .3s ease-in-out;
     /* background-color: rebeccapurple; */
 }
 
